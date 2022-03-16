@@ -18,7 +18,7 @@ export function rangeSum(start, end) {
 */
 export function iterationCount(a) {
   let amount = 0
-  while(a > 0.2){
+  while(a > 0.1){
     a /= 2
     amount++
   }
@@ -32,9 +32,10 @@ export function iterationCount(a) {
 */
 export function symbolsReplace(message) {
   let i = 2
+  console.log(message)
   do{
-    message = message.replace(message[i],'_')
-      i += 3
+    message = message.substr(0,i) + '_' + message.substr(i+1,message.length)
+    i += 3
     }
   while(i<message.length)
  return message
