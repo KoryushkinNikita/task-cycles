@@ -4,7 +4,7 @@
   и верните итоговый результат.
 */
 export function rangeSum(start, end) {
-  sum = 0
+  let sum = 0
   for (i = start ;i < end + 1 ;i++){
     if (i % 2 === 0) sum += i
   }
@@ -17,7 +17,7 @@ export function rangeSum(start, end) {
   и верните количество потребовавшихся итераций (т.е. сколько раз пришлось выполнить деление).
 */
 export function iterationCount(a) {
-  amount = 0
+  let amount = 0
   while(a > 0.2){
     a /= 2
     amount++
@@ -31,7 +31,7 @@ export function iterationCount(a) {
   и верните итоговый результат.
 */
 export function symbolsReplace(message) {
-  i = 2
+  let i = 2
   do{
     message = message.replace(message[i],'_')
       i += 3
